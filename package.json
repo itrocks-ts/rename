@@ -14,6 +14,21 @@
 		"*.js"
 	],
 	"keywords": [
+		"case",
+		"class",
+		"column",
+		"convention",
+		"display",
+		"it.rocks",
+		"live",
+		"lowercase",
+		"name",
+		"naming",
+		"rename",
+		"route",
+		"transform",
+		"uppercase",
+		"variable"
 	],
 	"license": "ISC",
 	"main": "./rename.js",
@@ -22,5 +37,5 @@
 	"scripts": {
 		"build": "tsc -p tsconfig.json"
 	},
-	"version": "0.0.2"
+	"version": "0.0.3"
 }

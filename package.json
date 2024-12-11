@@ -1,0 +1,26 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"description": "Switch the formatting of names stored in strings between different naming conventions",
+	"devDependencies": {
+		"typescript": "~5.6"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"*.d.ts",
+		"*.js"
+	],
+	"keywords": [
+	],
+	"license": "ISC",
+	"main": "./rename.js",
+	"name": "@itrocks/rename",
+	"repository": "https://github.com/itrocks-ts/rename",
+	"scripts": {
+		"build": "tsc -p tsconfig.json"
+	},
+	"version": "0.0.1"
+}

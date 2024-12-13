@@ -7,11 +7,18 @@
 	"devDependencies": {
 		"typescript": "~5.6"
 	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": {
+		"import": "./esm/rename.js",
+		"require": "./cjs/rename.js"
+	},
 	"files": [
 		"LICENSE",
 		"README.md",
-		"*.d.ts",
-		"*.js"
+		"*/*.d.ts",
+		"*/*.js"
 	],
 	"keywords": [
 		"case",
@@ -31,11 +38,13 @@
 		"variable"
 	],
 	"license": "ISC",
-	"main": "./rename.js",
 	"name": "@itrocks/rename",
 	"repository": "https://github.com/itrocks-ts/rename",
 	"scripts": {
-		"build": "tsc -p tsconfig.json"
+		"build": "npm run build:cjs && npm run build:esm",
+		"build:cjs": "tsc -p tsconfig.cjs.json",
+		"build:esm": "tsc -p tsconfig.esm.json"
 	},
-	"version": "0.0.3"
+	"types": "./esm/rename.d.ts",
+	"version": "0.0.4"
 }

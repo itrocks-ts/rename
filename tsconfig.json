@@ -1,9 +1,12 @@
 {
 	"compilerOptions": {
 		"declaration": true,
-		"module": "CommonJS",
+		"declarationMap": true,
+		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,
+		"sourceMap": true,
 		"strict": true,
-		"target": "ESNext"
-	}
+		"target": "ES2022"
+	},
+	"include": ["./src"]
 }

@@ -1,8 +1,8 @@
-[![view on npm](https://badgen.net/npm/v/@itrocks/rename)](https://www.npmjs.org/package/@itrocks/rename)
-[![npm module downloads](https://badgen.net/npm/dt/@itrocks/rename)](https://www.npmjs.org/package/@itrocks/rename)
-[![GitHub repo dependents](https://badgen.net/github/dependents-repo/itrocks-ts/rename?label=dependents)](https://github.com/itrocks-ts/rename/network/dependents?dependent_type=REPOSITORY)
-[![Report issues on GitHub](https://badgen.net/github/open-issues/itrocks-ts/rename?icon=github)](https://github.com/itrocks-ts/rename/issues)
-[![Get support on Discord](https://badgen.net/discord/members/kbMjUq5F?icon=discord)](https://discord.gg/kbMjUq5F)
+[![npm version](https://img.shields.io/npm/v/@itrocks/rename?logo=npm)](https://www.npmjs.org/package/@itrocks/rename)
+[![npm downloads](https://img.shields.io/npm/dm/@itrocks/rename)](https://www.npmjs.org/package/@itrocks/rename)
+[![GitHub](https://img.shields.io/github/last-commit/itrocks-ts/rename?color=2dba4e&label=commit&logo=github)](https://github.com/itrocks-ts/rename)
+[![issues](https://img.shields.io/github/issues/itrocks-ts/rename)](https://github.com/itrocks-ts/rename/issues)
+[![discord](https://img.shields.io/discord/1314141024020467782?color=7289da&label=discord&logo=discord&logoColor=white)](https://discord.gg/WFPJjmUx)
 
 # rename
 

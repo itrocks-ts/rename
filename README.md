@@ -2,7 +2,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/@itrocks/rename)](https://www.npmjs.org/package/@itrocks/rename)
 [![GitHub](https://img.shields.io/github/last-commit/itrocks-ts/rename?color=2dba4e&label=commit&logo=github)](https://github.com/itrocks-ts/rename)
 [![issues](https://img.shields.io/github/issues/itrocks-ts/rename)](https://github.com/itrocks-ts/rename/issues)
-[![discord](https://img.shields.io/discord/1314141024020467782?color=7289da&label=discord&logo=discord&logoColor=white)](https://discord.gg/RZYhmhgrCk)
+[![discord](https://img.shields.io/discord/1314141024020467782?color=7289da&label=discord&logo=discord&logoColor=white)](https://25.re/ditr)
 
 # rename
 

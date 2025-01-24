@@ -20,7 +20,9 @@
 		"*/*.d.ts",
 		"*/*.js"
 	],
+	"homepage": "https://it.rocks",
 	"keywords": [
+		"backend",
 		"case",
 		"class",
 		"column",
@@ -46,5 +48,5 @@
 		"build:esm": "tsc -p tsconfig.esm.json"
 	},
 	"types": "./esm/rename.d.ts",
-	"version": "0.0.10"
+	"version": "0.0.11"
 }

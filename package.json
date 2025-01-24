@@ -41,12 +41,15 @@
 	],
 	"license": "ISC",
 	"name": "@itrocks/rename",
-	"repository": "https://github.com/itrocks-ts/rename",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/rename.git"
+	},
 	"scripts": {
 		"build": "npm run build:cjs && npm run build:esm",
 		"build:cjs": "tsc -p tsconfig.cjs.json",
 		"build:esm": "tsc -p tsconfig.esm.json"
 	},
 	"types": "./esm/rename.d.ts",
-	"version": "0.0.11"
+	"version": "0.0.12"
 }

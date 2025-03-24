@@ -42,8 +42,7 @@ export function ucFirst(string: string)
 	return string[0].toUpperCase() + string.slice(1)
 }
 
-export { Str }
-export default class Str extends String
+export class Str extends String
 {
 
 	lcFirst()    { return lcFirst(this + '')    }

@@ -36,7 +36,7 @@ console.log(toVariable('ThisName'))
 Alternatively, you can use the [Str class](#str-class) for an object-oriented approach:
 
 ```ts
-import Str from '@itrocks/rename'
+import { Str } from '@itrocks/rename'
 console.log(new Str('ThisName').toColumn())
 //> this_name
 ```
@@ -123,7 +123,7 @@ The Str class extends the native JavaScript
 object and includes all the transformation methods listed above.
 
 ```ts
-import Str from '@itrocks/rename'
+import { Str } from '@itrocks/rename'
 
 const str = new Str('hello_world')
 console.log(str.toClass())

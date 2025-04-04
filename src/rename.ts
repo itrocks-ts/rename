@@ -1,20 +1,24 @@
 
+export const toClass    = toPascalCase
+export const toColumn   = toSnakeCase
+export const toCss      = toKebabCase
+export const toField    = toSnakeCase
+export const toFunction = toCamelCase
+export const toMethod   = toCamelCase
+export const toProperty = toCamelCase
+export const toRoute    = toKebabCase
+export const toUrl      = toKebabCase
+export const toVariable = toCamelCase
+
 export function lcFirst(string: string)
 {
 	return string[0].toLowerCase() + string.slice(1)
 }
 
-export function toClass(string: string)
-{
-	return string[0].toUpperCase() + string.slice(1)
-		.replace(/[ _-]([a-zA-Z0-9])/g, (_, high: string) => high.toUpperCase())
-}
-
-export function toColumn(string: string)
+export function toCamelCase(string: string)
 {
 	return string[0].toLowerCase() + string.slice(1)
-		.replace(/[ -]/g, '_')
-		.replace(/([a-z0-9])([A-Z])/g, (_, low: string, high: string) => low + '_' + high.toLowerCase())
+		.replace(/[ _-](a-zA-Z0-9)/g, (_, high: string) => high.toUpperCase())
 }
 
 export function toDisplay(string: string)
@@ -24,17 +28,24 @@ export function toDisplay(string: string)
 		.replace(/([a-z0-9])([A-Z])/g, (_, low: string, high: string) => low + ' ' + high.toLowerCase())
 }
 
-export function toRoute(string: string)
+export function toKebabCase(string: string)
 {
 	return string[0].toLowerCase() + string.slice(1)
 		.replace(/[ _]/g, '-')
 		.replace(/([a-z0-9])([A-Z])/g, (_, low: string, high: string) => low + '-' + high.toLowerCase())
 }
 
-export function toVariable(string: string)
+export function toPascalCase(string: string)
+{
+	return string[0].toUpperCase() + string.slice(1)
+		.replace(/[ _-]([a-zA-Z0-9])/g, (_, high: string) => high.toUpperCase())
+}
+
+export function toSnakeCase(string: string)
 {
 	return string[0].toLowerCase() + string.slice(1)
-		.replace(/[ _-](a-zA-Z0-9)/g, (_, high: string) => high.toUpperCase())
+		.replace(/[ -]/g, '_')
+		.replace(/([a-z0-9])([A-Z])/g, (_, low: string, high: string) => low + '_' + high.toLowerCase())
 }
 
 export function ucFirst(string: string)
@@ -45,12 +56,22 @@ export function ucFirst(string: string)
 export class Str extends String
 {
 
-	lcFirst()    { return lcFirst(this + '')    }
-	toClass()    { return toClass(this + '')    }
-	toColumn()   { return toColumn(this + '')   }
-	toDisplay()  { return toDisplay(this + '')  }
-	toRoute()    { return toRoute(this + '')    }
+	camelCase()  { return toCamelCase(this + '') }
+	kebabCase()  { return toKebabCase(this + '') }
+	lcFirst()    { return lcFirst(this + '') }
+	pascalCase() { return toPascalCase(this + '') }
+	snakeCase()  { return toSnakeCase(this + '') }
+	toClass()    { return toClass(this + '') }
+	toColumn()   { return toColumn(this + '') }
+	toCss()      { return toCss(this + '') }
+	toDisplay()  { return toDisplay(this + '') }
+	toField()    { return toField(this + '') }
+	toFunction() { return toFunction(this + '') }
+	toMethod()   { return toMethod(this + '') }
+	toProperty() { return toProperty(this + '') }
+	toRoute()    { return toRoute(this + '') }
+	toUrl()      { return toUrl(this + '') }
 	toVariable() { return toVariable(this + '') }
-	ucFirst()    { return ucFirst(this + '')    }
+	ucFirst()    { return ucFirst(this + '') }
 
 }

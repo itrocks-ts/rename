@@ -1,7 +1,8 @@
 
 export const toClass    = toPascalCase
 export const toColumn   = toSnakeCase
-export const toCss      = toKebabCase
+export const toCssClass = toKebabCase
+export const toCssId    = toKebabCase
 export const toField    = toSnakeCase
 export const toFunction = toCamelCase
 export const toMethod   = toCamelCase
@@ -63,7 +64,8 @@ export class Str extends String
 	snakeCase()  { return toSnakeCase(this + '') }
 	toClass()    { return toClass(this + '') }
 	toColumn()   { return toColumn(this + '') }
-	toCss()      { return toCss(this + '') }
+	toCssClass() { return toCssClass(this + '') }
+	toCssId()    { return toCssId(this + '') }
 	toDisplay()  { return toDisplay(this + '') }
 	toField()    { return toField(this + '') }
 	toFunction() { return toFunction(this + '') }

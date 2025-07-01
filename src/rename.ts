@@ -19,7 +19,7 @@ export function lcFirst(string: string)
 export function toCamelCase(string: string)
 {
 	return string[0].toLowerCase() + string.slice(1)
-		.replace(/[ _-](a-zA-Z0-9)/g, (_, high: string) => high.toUpperCase())
+		.replace(/[ _-]([a-zA-Z0-9])/g, (_, high: string) => high.toUpperCase())
 }
 
 export function toDisplay(string: string)
